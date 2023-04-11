@@ -22,7 +22,7 @@ func CmdDeposit() *cobra.Command {
 			fmt.Sprintf(`Deposit coins to be part of a house corresponding to a sport event.
 
 				Example:
-				$ %s tx house deposit bc79a72c-ad7e-4cf5-91a2-98af2751e812 1000ufury --from mykey
+				$ %s tx house deposit bc79a72c-ad7e-4cf5-91a2-98af2751e812 1000uxfury --from mykey
 				`,
 				version.AppName,
 			),

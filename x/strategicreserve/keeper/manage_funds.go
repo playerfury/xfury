@@ -232,13 +232,13 @@ func (k Keeper) transferFundsFromUserToModule(ctx sdk.Context,
 	address sdk.AccAddress, moduleAccName string, amount sdk.Int,
 ) error {
 	// Get the spendable balance of the account holder
-	ufuryCoins := k.bankKeeper.SpendableCoins(ctx,
+	uxfuryCoins := k.bankKeeper.SpendableCoins(ctx,
 		address).AmountOf(params.DefaultBondDenom)
 
 	// If account holder has insufficient balance, return error
-	if ufuryCoins.LT(amount) {
+	if uxfuryCoins.LT(amount) {
 		k.Logger(ctx).Error(fmt.Sprintf(types.LogErrInsufficientUserBalance,
-			address, ufuryCoins, amount))
+			address, uxfuryCoins, amount))
 		return sdkerrors.Wrapf(types.ErrInsufficientUserBalance, address.String())
 	}
 

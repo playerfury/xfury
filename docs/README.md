@@ -184,8 +184,8 @@ furyd start
 
 - Initialize: `furyd init [node_name] --chain-id [chain_name]`
 - Add key for genesis account `furyd keys add [genesis_key_name]`
-- Add genesis account `furyd add-genesis-account [genesis_key_name] 10000000000000000000ufury`
-- Create a validator at genesis `furyd gentx [genesis_key_name] 10000000ufury --chain-id [chain_name]`
+- Add genesis account `furyd add-genesis-account [genesis_key_name] 10000000000000000000uxfury`
+- Create a validator at genesis `furyd gentx [genesis_key_name] 10000000uxfury --chain-id [chain_name]`
 - Collect genesis transactions `furyd collect-gentxs`
 - Start node `furyd start`
 

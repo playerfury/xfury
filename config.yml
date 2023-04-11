@@ -1,27 +1,27 @@
 version: 1
 accounts:
   - name: treasury
-    coins: ["9000000000000ufury"]
+    coins: ["9000000000000uxfury"]
   - name: seed
-    coins: ["1000000000000ufury"]
-validators:
+    coins: ["1000000000000uxfury"]
+validator:
   - name: treasury
-    bonded: "1000000000000ufury"
+    bonded: "1000000000000uxfury"
 genesis:
   app_state:
     staking:
       params:
-        bond_denom: "ufury"
+        bond_denom: "uxfury"
     crisis:
       constant_fee:
-        denom: "ufury"
+        denom: "uxfury"
         amount: "1000"
     dvm:
       key_vault:
         public_keys: []
     gov:
       deposit_params:
-        min_deposit: [{ amount: "1", denom: "ufury" }]
+        min_deposit: [{ amount: "1", denom: "uxfury" }]
 
       voting_params:
         voting_period: "30s"
@@ -32,7 +32,7 @@ genesis:
         phase_step: "1"
         truncated_tokens: "0"
       params:
-        mint_denom: "ufury"
+        mint_denom: "uxfury"
         blocks_per_year: "100"
         phases:
           [
@@ -47,3 +47,5 @@ genesis:
         event_min_bet_amount: "1000000"
         event_min_bet_fee: "0"
         event_max_sr_contribution: "100000000"
+        
+     
