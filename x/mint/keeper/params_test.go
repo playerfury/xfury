@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/fanfury-sports/fury/x/mint/types"
+	"github.com/playerfury/xfury/x/mint/types"
 	"github.com/stretchr/testify/require"
 )
 

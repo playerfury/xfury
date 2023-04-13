@@ -9,11 +9,11 @@ import (
 	"github.com/spf13/cast"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	simappUtil "github.com/fanfury-sports/fury/testutil/simapp"
-	"github.com/fanfury-sports/fury/x/bet/keeper"
-	"github.com/fanfury-sports/fury/x/bet/types"
-	sporteventkeeper "github.com/fanfury-sports/fury/x/sportevent/keeper"
-	sporteventtypes "github.com/fanfury-sports/fury/x/sportevent/types"
+	simappUtil "github.com/playerfury/xfury/testutil/simapp"
+	"github.com/playerfury/xfury/x/bet/keeper"
+	"github.com/playerfury/xfury/x/bet/types"
+	sporteventkeeper "github.com/playerfury/xfury/x/sportevent/keeper"
+	sporteventtypes "github.com/playerfury/xfury/x/sportevent/types"
 	"github.com/stretchr/testify/require"
 )
 

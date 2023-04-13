@@ -1,10 +1,10 @@
 syntax = "proto3";
-package furysports.fury.bet;
+package furysports.xfury.bet;
 
 import "gogoproto/gogo.proto";
-import "fury/bet/odds_type.proto";
+import "xfury/bet/odds_type.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/bet/types";
+option go_package = "github.com/playerfury/xfury/x/bet/types";
 
 // Bet is the main type of bet in the blockchain state.
 message Bet {
@@ -33,7 +33,7 @@ message Bet {
 
   // odds_type is the type of odds that
   // user choose such as decimal, fractional.
-  furysports.fury.bet.OddsType odds_type = 4;
+  furysports.xfury.bet.OddsType odds_type = 4;
 
   // odds_value is the odds on which the bet is placed.
   string odds_value = 5;

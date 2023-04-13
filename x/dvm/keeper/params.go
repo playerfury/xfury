@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/x/dvm/types"
+	"github.com/playerfury/xfury/x/dvm/types"
 )
 
 // GetParams get all parameters as types.Params

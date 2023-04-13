@@ -1,7 +1,7 @@
 syntax = "proto3";
-package furysports.fury.sportevent;
+package furysports.xfury.sportevent;
 
-option go_package = "github.com/fanfury-sports/fury/x/sportevent/types";
+option go_package = "github.com/playerfury/xfury/x/sportevent/types";
 
 // SportEventStats holds statistics of the sport-event
 message SportEventStats {

@@ -39,27 +39,27 @@ import (
 	ibctransfertypes "github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
 	ibc "github.com/cosmos/ibc-go/v3/modules/core"
 	ibchost "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	furyappparams "github.com/fanfury-sports/fury/app/params"
-	"github.com/fanfury-sports/fury/x/mint"
-	minttypes "github.com/fanfury-sports/fury/x/mint/types"
+	furyappparams "github.com/playerfury/xfury/app/params"
+	"github.com/playerfury/xfury/x/mint"
+	minttypes "github.com/playerfury/xfury/x/mint/types"
 
-	betmodule "github.com/fanfury-sports/fury/x/bet"
-	betmoduletypes "github.com/fanfury-sports/fury/x/bet/types"
+	betmodule "github.com/playerfury/xfury/x/bet"
+	betmoduletypes "github.com/playerfury/xfury/x/bet/types"
 
-	sporteventmodule "github.com/fanfury-sports/fury/x/sportevent"
-	sporteventmoduletypes "github.com/fanfury-sports/fury/x/sportevent/types"
+	sporteventmodule "github.com/playerfury/xfury/x/sportevent"
+	sporteventmoduletypes "github.com/playerfury/xfury/x/sportevent/types"
 
-	strategicreservemodule "github.com/fanfury-sports/fury/x/strategicreserve"
-	strategicreservemoduletypes "github.com/fanfury-sports/fury/x/strategicreserve/types"
+	strategicreservemodule "github.com/playerfury/xfury/x/strategicreserve"
+	strategicreservemoduletypes "github.com/playerfury/xfury/x/strategicreserve/types"
 
-	dvmmodule "github.com/fanfury-sports/fury/x/dvm"
-	dvmmoduletypes "github.com/fanfury-sports/fury/x/dvm/types"
+	dvmmodule "github.com/playerfury/xfury/x/dvm"
+	dvmmoduletypes "github.com/playerfury/xfury/x/dvm/types"
 
-	housemodule "github.com/fanfury-sports/fury/x/house"
-	housemoduletypes "github.com/fanfury-sports/fury/x/house/types"
+	housemodule "github.com/playerfury/xfury/x/house"
+	housemoduletypes "github.com/playerfury/xfury/x/house/types"
 
-	orderbookmodule "github.com/fanfury-sports/fury/x/orderbook"
-	orderbookmoduletypes "github.com/fanfury-sports/fury/x/orderbook/types"
+	orderbookmodule "github.com/playerfury/xfury/x/orderbook"
+	orderbookmoduletypes "github.com/playerfury/xfury/x/orderbook/types"
 
 	// unnamed import of statik for swagger UI support
 	_ "github.com/cosmos/cosmos-sdk/client/docs/statik"

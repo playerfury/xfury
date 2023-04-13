@@ -50,7 +50,7 @@ Fury could be installed by two ways - downloading binary from releases page or b
 - Place furyd into /usr/local/sbin
 
 ```shell
-sudo mv furyd /usr/local/sbin/furyd
+sudo mv furyd /usr/local/sbin/xfuryd
 ```
 
 ### Building from source
@@ -60,7 +60,7 @@ sudo mv furyd /usr/local/sbin/furyd
 - Clone git repository
 
 ```shell
-git clone https://github.com/fanfury-sports/fury.git
+git clone https://github.com/playerfury/xfury.git
 ```
 
 - Checkout release tag
@@ -81,7 +81,7 @@ make install
 ### Install system.d service file
 
 ```shell
-nano /etc/systemd/system/furyd.service
+nano /etc/systemd/system/xfuryd.service
 ```
 
 Please following contents(working dir may be changed as needed)
@@ -95,7 +95,7 @@ After=network.target
 Type=simple
 User=ubuntu
 WorkingDirectory=/home/ubuntu
-ExecStart=/usr/local/sbin/furyd start
+ExecStart=/usr/local/sbin/xfuryd start
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=40960
@@ -129,8 +129,8 @@ furyd init {{NODE_NAME}} --chain-id fanfury-sports-1
 
 Select network to join
 
-- Replace `${HOME}/.fury/config/genesis.json` with the genesis file of the chain.
-- Add `persistent_peers` or `seeds` in `${HOME}/.fury/config/config.toml`
+- Replace `${HOME}/.xfury/config/genesis.json` with the genesis file of the chain.
+- Add `persistent_peers` or `seeds` in `${HOME}/.xfury/config/config.toml`
 - Start node
 
 ```shell
@@ -156,22 +156,22 @@ Coming Soon!!
 - Place the genesis file  with the genesis file of the chain.
 
 ```shell
-wget https://github.com/fanfury-sports/networks/blob/master/fanfury-sports-1/genesis.json -O ~/.furyd/config/genesis.json
+wget https://github.com/fanfury-sports/networks/blob/master/fanfury-sports-1/genesis.json -O ~/.xfuryd/config/genesis.json
 ```
 
 Verify genesis hash sum
 
 ```shell
-sha256sum ~/.furyd/config/genesis.json
+sha256sum ~/.xfuryd/config/genesis.json
 ```
 
 Correct sha256 sum for fanfury-sports-1 is - 2bea72699f9c1afd6217f7e76f14f07c1fbe849d090fc37cd008a42d14d5d30c
 Genesis file sha sum is published in according repository.
 
-- Add `persistent_peers` or `seeds` in `${HOME}/.fury/config/config.toml`
+- Add `persistent_peers` or `seeds` in `${HOME}/.xfury/config/config.toml`
 
 ```shell
-sed -i '/s/persistent_peers = ""/persistent_peers = "4980b478f91de9be0564a547779e5c6cb07eb995@3.239.15.80:26656,0e7042be1b77707aaf0597bb804da90d3a606c08@3.88.40.53:26656/g' $HOME/.fury/config/config.toml
+sed -i '/s/persistent_peers = ""/persistent_peers = "4980b478f91de9be0564a547779e5c6cb07eb995@3.239.15.80:26656,0e7042be1b77707aaf0597bb804da90d3a606c08@3.88.40.53:26656/g' $HOME/.xfury/config/config.toml
 ```
 
 - Start node
@@ -192,7 +192,7 @@ furyd start
 ### Reset chain
 
 ```shell
-rm -rf ~/.fury
+rm -rf ~/.xfury
 ```
 
 ### Shutdown node

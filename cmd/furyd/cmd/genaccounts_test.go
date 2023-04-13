@@ -9,15 +9,15 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/cmd/furyd/cmd"
-	"github.com/fanfury-sports/fury/testutil/network"
+	"github.com/playerfury/xfury/cmd/xfuryd/cmd"
+	"github.com/playerfury/xfury/testutil/network"
 	"github.com/stretchr/testify/require"
 )
 
 func TestAddGenesisAccountCmdPanic(t *testing.T) {
 	userHomeDir, err := os.UserHomeDir()
 	require.NoError(t, err)
-	defaultNodeHome := filepath.Join(userHomeDir, ".fury")
+	defaultNodeHome := filepath.Join(userHomeDir, ".xfury")
 	panicFunc := func() {
 		cmd.AddGenesisAccountCmd(defaultNodeHome)
 	}
@@ -36,7 +36,7 @@ func TestSampleCMD(t *testing.T) {
 
 	userHomeDir, err := os.UserHomeDir()
 	require.NoError(t, err)
-	defaultNodeHome := filepath.Join(userHomeDir, ".fury")
+	defaultNodeHome := filepath.Join(userHomeDir, ".xfury")
 
 	fields := []string{keyInfo.GetAddress().String(), "10000000uxfury"}
 	for _, tc := range []struct {

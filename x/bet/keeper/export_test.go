@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	"github.com/fanfury-sports/fury/x/bet/types"
-	sporteventtypes "github.com/fanfury-sports/fury/x/sportevent/types"
+	"github.com/playerfury/xfury/x/bet/types"
+	sporteventtypes "github.com/playerfury/xfury/x/sportevent/types"
 )
 
 // KeeperTest is a wrapper object for the keeper, It is being used

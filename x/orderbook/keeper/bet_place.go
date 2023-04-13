@@ -5,8 +5,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/spf13/cast"
 
-	bettypes "github.com/fanfury-sports/fury/x/bet/types"
-	"github.com/fanfury-sports/fury/x/orderbook/types"
+	bettypes "github.com/playerfury/xfury/x/bet/types"
+	"github.com/playerfury/xfury/x/orderbook/types"
 )
 
 // ProcessBetPlacement processes bet placement

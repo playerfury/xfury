@@ -1,9 +1,9 @@
 syntax = "proto3";
-package furysports.fury.orderbook;
+package furysports.xfury.orderbook;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/orderbook/types";
+option go_package = "github.com/playerfury/xfury/x/orderbook/types";
 
 // BookOddsExposure represents the exposures taken on odds
 message BookOddsExposure {

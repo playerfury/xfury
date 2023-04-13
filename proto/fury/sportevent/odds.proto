@@ -1,9 +1,9 @@
 syntax = "proto3";
-package furysports.fury.sportevent;
+package furysports.xfury.sportevent;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/sportevent/types";
+option go_package = "github.com/playerfury/xfury/x/sportevent/types";
 
 // Odds is a representation of and sport-event odds items.
 message Odds {

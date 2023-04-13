@@ -1,13 +1,13 @@
 syntax = "proto3";
-package furysports.fury.dvm;
+package furysports.xfury.dvm;
 
 import "gogoproto/gogo.proto";
-import "fury/dvm/params.proto";
-import "fury/dvm/key_vault.proto";
-import "fury/dvm/proposal.proto";
-import "fury/dvm/stats.proto";
+import "xfury/dvm/params.proto";
+import "xfury/dvm/key_vault.proto";
+import "xfury/dvm/proposal.proto";
+import "xfury/dvm/stats.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/dvm/types";
+option go_package = "github.com/playerfury/xfury/x/dvm/types";
 
 // GenesisState defines the dvm module's genesis state.
 message GenesisState {

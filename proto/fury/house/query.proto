@@ -1,37 +1,37 @@
 syntax = "proto3";
-package furysports.fury.house;
+package furysports.xfury.house;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "fury/house/params.proto";
-import "fury/house/deposit.proto";
-import "fury/house/withdraw.proto";
+import "xfury/house/params.proto";
+import "xfury/house/deposit.proto";
+import "xfury/house/withdraw.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/house/types";
+option go_package = "github.com/playerfury/xfury/x/house/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Params queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/fury/house/params";
+    option (google.api.http).get = "/xfury/house/params";
   }
 
   // Deposits queries all deposits.
   rpc Deposits(QueryDepositsRequest) returns (QueryDepositsResponse) {
-    option (google.api.http).get = "/fury/deposits";
+    option (google.api.http).get = "/xfury/deposits";
   }
 
   // DepositorDeposits queries deposits info for given depositor.
   rpc DepositorDeposits(QueryDepositorDepositsRequest)
       returns (QueryDepositorDepositsResponse) {
-    option (google.api.http).get = "/fury/deposits/{depositor_address}";
+    option (google.api.http).get = "/xfury/deposits/{depositor_address}";
   }
 
   // DepositorWithdrawals queries withdrawals info for given depositor.
   rpc DepositorWithdrawals(QueryDepositorWithdrawalsRequest)
       returns (QueryDepositorWithdrawalsResponse) {
-    option (google.api.http).get = "/fury/withdrawals/{depositor_address}";
+    option (google.api.http).get = "/xfury/withdrawals/{depositor_address}";
   }
 }
 

@@ -1,9 +1,9 @@
 syntax = "proto3";
-package furysports.fury.bet;
+package furysports.xfury.bet;
 
-import "fury/bet/place_bet_fields.proto";
+import "xfury/bet/place_bet_fields.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/bet/types";
+option go_package = "github.com/playerfury/xfury/x/bet/types";
 
 // Msg defines the Msg service.
 service Msg {

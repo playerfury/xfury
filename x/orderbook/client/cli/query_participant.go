@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/fanfury-sports/fury/x/orderbook/types"
+	"github.com/playerfury/xfury/x/orderbook/types"
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 )

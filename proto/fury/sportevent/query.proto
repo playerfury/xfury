@@ -1,35 +1,35 @@
 syntax = "proto3";
-package furysports.fury.sportevent;
+package furysports.xfury.sportevent;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
-import "fury/sportevent/params.proto";
-import "fury/sportevent/sport_event.proto";
+import "xfury/sportevent/params.proto";
+import "xfury/sportevent/sport_event.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/sportevent/types";
+option go_package = "github.com/playerfury/xfury/x/sportevent/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Params queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/fury/sport-event/params";
+    option (google.api.http).get = "/xfury/sport-event/params";
   }
   // Queries a SportEvent by uid.
   rpc SportEvent(QuerySportEventRequest) returns (QuerySportEventResponse) {
-    option (google.api.http).get = "/fury/sport-event/{uid}";
+    option (google.api.http).get = "/xfury/sport-event/{uid}";
   }
 
   // Queries a list of SportEvent items.
   rpc SportEvents(QuerySportEventsRequest) returns (QuerySportEventsResponse) {
-    option (google.api.http).get = "/fury/sport-event/sport_events";
+    option (google.api.http).get = "/xfury/sport-event/sport_events";
   }
 
   // Queries a list of SportEventsByUIDs items.
   rpc SportEventsByUIDs(QuerySportEventsByUIDsRequest)
       returns (QuerySportEventsByUIDsResponse) {
     option (google.api.http).get =
-        "/fury/sport-event/sport_events_by_uids/{uids}";
+        "/xfury/sport-event/sport_events_by_uids/{uids}";
   }
 }
 

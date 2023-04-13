@@ -1,9 +1,9 @@
 syntax = "proto3";
-package furysports.fury.dvm;
+package furysports.xfury.dvm;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/dvm/types";
+option go_package = "github.com/playerfury/xfury/x/dvm/types";
 
 // KeyVault is the information of important keys stored in dvm state.
 message KeyVault {

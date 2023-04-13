@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/fanfury-sports/fury/x/bet/keeper"
-	"github.com/fanfury-sports/fury/x/bet/types"
+	"github.com/playerfury/xfury/x/bet/keeper"
+	"github.com/playerfury/xfury/x/bet/types"
 )
 
 // NewHandler returns sdk.handler instance with configured message handler function

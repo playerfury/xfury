@@ -1,24 +1,24 @@
 syntax = "proto3";
-package furysports.fury.strategicreserve;
+package furysports.xfury.strategicreserve;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 
-import "fury/strategicreserve/params.proto";
-import "fury/strategicreserve/reserver.proto";
+import "xfury/strategicreserve/params.proto";
+import "xfury/strategicreserve/reserver.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/strategicreserve/types";
+option go_package = "github.com/playerfury/xfury/x/strategicreserve/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/fury/strategic-reserve/params";
+    option (google.api.http).get = "/xfury/strategic-reserve/params";
   }
 
   // Reserver returns the Reserver value.
   rpc Reserver(QueryReserverRequest) returns (QueryReserverResponse) {
-    option (google.api.http).get = "/fury/strategic-reserve/reserver";
+    option (google.api.http).get = "/xfury/strategic-reserve/reserver";
   }
 }
 

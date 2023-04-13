@@ -1,10 +1,10 @@
 syntax = "proto3";
-package furysports.fury.sportevent;
+package furysports.xfury.sportevent;
 
 import "gogoproto/gogo.proto";
-import "fury/sportevent/sport_event.proto";
+import "xfury/sportevent/sport_event.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/sportevent/types";
+option go_package = "github.com/playerfury/xfury/x/sportevent/types";
 
 // Msg defines the Msg service.
 service Msg {

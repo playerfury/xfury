@@ -1,9 +1,9 @@
 syntax = "proto3";
-package furysports.fury.mint;
+package furysports.xfury.mint;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/mint/types";
+option go_package = "github.com/playerfury/xfury/x/mint/types";
 
 // Phase defines the phase parameters for the module.
 message Phase {

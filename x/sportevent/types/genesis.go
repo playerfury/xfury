@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/fanfury-sports/fury/utils"
+	"github.com/playerfury/xfury/utils"
 )
 
 // DefaultIndex is the default  global index

@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/fanfury-sports/fury/testutil/sample"
-	"github.com/fanfury-sports/fury/utils"
-	"github.com/fanfury-sports/fury/x/dvm/types"
+	"github.com/playerfury/xfury/testutil/sample"
+	"github.com/playerfury/xfury/utils"
+	"github.com/playerfury/xfury/x/dvm/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,17 +1,17 @@
 syntax = "proto3";
-package furysports.fury.mint;
+package furysports.xfury.mint;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "fury/mint/params.proto";
+import "xfury/mint/params.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/mint/types";
+option go_package = "github.com/playerfury/xfury/x/mint/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Params queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/fury/mint/params";
+    option (google.api.http).get = "/xfury/mint/params";
   }
 
   // Inflation returns the current minting inflation value.

@@ -16,9 +16,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/fanfury-sports/fury/x/sportevent/client/cli"
-	"github.com/fanfury-sports/fury/x/sportevent/keeper"
-	"github.com/fanfury-sports/fury/x/sportevent/types"
+	"github.com/playerfury/xfury/x/sportevent/client/cli"
+	"github.com/playerfury/xfury/x/sportevent/keeper"
+	"github.com/playerfury/xfury/x/sportevent/types"
 )
 
 var (

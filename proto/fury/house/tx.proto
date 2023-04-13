@@ -1,10 +1,10 @@
 syntax = "proto3";
-package furysports.fury.house;
+package furysports.xfury.house;
 
 import "gogoproto/gogo.proto";
-import "fury/house/withdraw.proto";
+import "xfury/house/withdraw.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/house/types";
+option go_package = "github.com/playerfury/xfury/x/house/types";
 
 // Msg defines the house Msg service.
 service Msg {

@@ -1,46 +1,46 @@
 syntax = "proto3";
-package furysports.fury.dvm;
+package furysports.xfury.dvm;
 
 import "gogoproto/gogo.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "google/api/annotations.proto";
-import "fury/dvm/params.proto";
-import "fury/dvm/proposal.proto";
+import "xfury/dvm/params.proto";
+import "xfury/dvm/proposal.proto";
 
-option go_package = "github.com/fanfury-sports/fury/x/dvm/types";
+option go_package = "github.com/playerfury/xfury/x/dvm/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Params queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/fury/dvm/params";
+    option (google.api.http).get = "/xfury/dvm/params";
   }
   // Queries a list of PubKeys items.
   rpc PubKeys(QueryPubKeysRequest) returns (QueryPubKeysResponse) {
-    option (google.api.http).get = "/fury/dvm/pub_keys";
+    option (google.api.http).get = "/xfury/dvm/pub_keys";
   }
   // Queries an active proposal by id.
   rpc ActivePublicKeysChangeProposal(QueryActivePublicKeysChangeProposalRequest)
       returns (QueryActivePublicKeysChangeProposalResponse) {
-    option (google.api.http).get = "/fury/dvm/active_pubkeys_proposal/{id}";
+    option (google.api.http).get = "/xfury/dvm/active_pubkeys_proposal/{id}";
   }
   // Queries a list of active proposal items.
   rpc ActivePublicKeysChangeProposals(
       QueryActivePublicKeysChangeProposalsRequest)
       returns (QueryActivePublicKeysChangeProposalsResponse) {
-    option (google.api.http).get = "/fury/dvm/active_pubkeys_proposals";
+    option (google.api.http).get = "/xfury/dvm/active_pubkeys_proposals";
   }
   // Queries a finished proposal by id.
   rpc FinishedPublicKeysChangeProposal(
       QueryFinishedPublicKeysChangeProposalRequest)
       returns (QueryFinishedPublicKeysChangeProposalResponse) {
-    option (google.api.http).get = "/fury/dvm/finished_pubkeys_proposal/{id}";
+    option (google.api.http).get = "/xfury/dvm/finished_pubkeys_proposal/{id}";
   }
   // Queries a list of finished proposal items.
   rpc FinishedPublicKeysChangeProposals(
       QueryFinishedPublicKeysChangeProposalsRequest)
       returns (QueryFinishedPublicKeysChangeProposalsResponse) {
-    option (google.api.http).get = "/fury/dvm/finished_pubkeys_proposals";
+    option (google.api.http).get = "/xfury/dvm/finished_pubkeys_proposals";
   }
 }
 

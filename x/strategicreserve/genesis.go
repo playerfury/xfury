@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/fanfury-sports/fury/consts"
-	"github.com/fanfury-sports/fury/x/strategicreserve/keeper"
-	"github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/consts"
+	"github.com/playerfury/xfury/x/strategicreserve/keeper"
+	"github.com/playerfury/xfury/x/strategicreserve/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis

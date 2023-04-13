@@ -1,10 +1,10 @@
 syntax = "proto3";
-package furysports.fury.strategicreserve;
+package furysports.xfury.strategicreserve;
 
-option go_package = "github.com/fanfury-sports/fury/x/strategicreserve/types";
+option go_package = "github.com/playerfury/xfury/x/strategicreserve/types";
 
 import "gogoproto/gogo.proto";
-import "fury/strategicreserve/sr_pool.proto";
+import "xfury/strategicreserve/sr_pool.proto";
 
 // Reserver defines the parameters for the StrategicReserve module.
 message Reserver {

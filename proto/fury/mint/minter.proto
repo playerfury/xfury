@@ -1,7 +1,7 @@
 syntax = "proto3";
-package furysports.fury.mint;
+package furysports.xfury.mint;
 
-option go_package = "github.com/fanfury-sports/fury/x/mint/types";
+option go_package = "github.com/playerfury/xfury/x/mint/types";
 
 import "gogoproto/gogo.proto";
 

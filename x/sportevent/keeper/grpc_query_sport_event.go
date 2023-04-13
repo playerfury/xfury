@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/fanfury-sports/fury/consts"
-	"github.com/fanfury-sports/fury/x/sportevent/types"
+	"github.com/playerfury/xfury/consts"
+	"github.com/playerfury/xfury/x/sportevent/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -2,29 +2,31 @@
 
 set -eo pipefail
 
-# get protoc executions
-go get github.com/regen-network/cosmos-proto/protoc-gen-gocosmos@v1.3.3-alpha.regen.1 2>/dev/null
+protoc_gen_gocosmos() {
+  if ! grep "github.com/gogo/protobuf => github.com/regen-network/protobuf" go.mod &>/dev/null; then
+    echo -e "\tPlease run this command from somewhere inside the cosmos-sdk folder."
+    return 1
+  fi
 
-# get cosmos sdk from github
-go get github.com/cosmos/cosmos-sdk@v0.45.11 2>/dev/null
+  go get github.com/regen-network/cosmos-proto/protoc-gen-gocosmos@latest 2>/dev/null
+}
 
-echo "Generating gogo proto code"
-cd proto
-proto_dirs=$(find ./fury -path -prune -o -name '*.proto' -print0 | xargs -0 -n1 dirname | sort | uniq)
+protoc_gen_gocosmos
+
+proto_dirs=$(find ./proto -path -prune -o -name '*.proto' -print0 | xargs -0 -n1 dirname | sort | uniq)
 for dir in $proto_dirs; do
-  for file in $(find "${dir}" -maxdepth 1 -name '*.proto'); do
-    if grep go_package $file &>/dev/null; then
-      buf generate --template buf.gen.gogo.yaml $file
-    fi
-  done
+  buf protoc \
+    -I "proto" \
+    --gocosmos_out=plugins=interfacetype+grpc,Mgoogle/protobuf/any.proto=github.com/cosmos/cosmos-sdk/codec/types:. \
+    --grpc-gateway_out=logtostderr=true,allow_colon_final_segments=true:. \
+    $(find "${dir}" -maxdepth 1 -name '*.proto')
+
 done
 
-cd ..
+# generate codec/testdata proto code
+# buf protoc -I "proto" -I "third_party/proto" -I "testutil/testdata" --gocosmos_out=plugins=interfacetype+grpc,\
+# Mgoogle/protobuf/any.proto=github.com/cosmos/cosmos-sdk/codec/types:. ./testutil/testdata/*.proto
 
 # move proto files to the right places
-#
-# Note: Proto files are suffixed with the current binary version.
-cp -r github.com/fanfury-sports/fury/* ./
+cp -r github.com/playerfury/xfury/* ./
 rm -rf github.com
-
-go mod tidy -compat=1.18
