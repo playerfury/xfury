@@ -12,7 +12,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/store"
 	simulation2 "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/fanfury-sports/fury/app"
+	"github.com/playerfury/xfury/app"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 	"github.com/tendermint/tendermint/libs/rand"
@@ -21,7 +21,7 @@ import (
 
 // SimAppChainID hardcoded chainID for simulation
 const (
-	SimAppChainID = "fury-simapp"
+	SimAppChainID = "xfury-simapp"
 )
 
 func init() {

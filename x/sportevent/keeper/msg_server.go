@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/fanfury-sports/fury/x/sportevent/types"
+	"github.com/playerfury/xfury/x/sportevent/types"
 )
 
 type msgServer struct {

@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/consts"
-	"github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/consts"
+	"github.com/playerfury/xfury/x/strategicreserve/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

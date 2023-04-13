@@ -3,8 +3,8 @@ package keeper
 import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/utils"
-	"github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/utils"
+	"github.com/playerfury/xfury/x/strategicreserve/types"
 )
 
 // getPayoutLock checks if payout lock exists

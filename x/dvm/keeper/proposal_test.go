@@ -6,11 +6,11 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/testutil/nullify"
-	simappUtil "github.com/fanfury-sports/fury/testutil/simapp"
-	"github.com/fanfury-sports/fury/utils"
-	"github.com/fanfury-sports/fury/x/dvm/keeper"
-	"github.com/fanfury-sports/fury/x/dvm/types"
+	"github.com/playerfury/xfury/testutil/nullify"
+	simappUtil "github.com/playerfury/xfury/testutil/simapp"
+	"github.com/playerfury/xfury/utils"
+	"github.com/playerfury/xfury/x/dvm/keeper"
+	"github.com/playerfury/xfury/x/dvm/types"
 	"github.com/spf13/cast"
 	"github.com/stretchr/testify/require"
 )

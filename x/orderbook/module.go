@@ -15,9 +15,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/fanfury-sports/fury/x/orderbook/client/cli"
-	"github.com/fanfury-sports/fury/x/orderbook/keeper"
-	"github.com/fanfury-sports/fury/x/orderbook/types"
+	"github.com/playerfury/xfury/x/orderbook/client/cli"
+	"github.com/playerfury/xfury/x/orderbook/keeper"
+	"github.com/playerfury/xfury/x/orderbook/types"
 )
 
 // AppModuleBasic defines the basic application module used by the orderbook module.

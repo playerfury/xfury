@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	simappUtil "github.com/fanfury-sports/fury/testutil/simapp"
-	"github.com/fanfury-sports/fury/utils"
-	"github.com/fanfury-sports/fury/x/dvm/types"
+	simappUtil "github.com/playerfury/xfury/testutil/simapp"
+	"github.com/playerfury/xfury/utils"
+	"github.com/playerfury/xfury/x/dvm/types"
 	"github.com/stretchr/testify/require"
 )
 

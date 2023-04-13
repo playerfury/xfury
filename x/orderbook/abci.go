@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/x/orderbook/keeper"
+	"github.com/playerfury/xfury/x/orderbook/keeper"
 )
 
 // EndBlocker settles the active deposits of resolved order books

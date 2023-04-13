@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/fanfury-sports/fury/utils"
-	"github.com/fanfury-sports/fury/x/orderbook/types"
+	"github.com/playerfury/xfury/utils"
+	"github.com/playerfury/xfury/x/orderbook/types"
 )
 
 // SetOrderBookStats sets bet statistics in the store

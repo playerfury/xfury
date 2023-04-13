@@ -1,9 +1,0 @@
-syntax = "proto3";
-package furysports.fury.dvm;
-
-import "gogoproto/gogo.proto";
-
-option go_package = "github.com/fanfury-sports/fury/x/dvm/types";
-
-// Params defines the parameters for the module.
-message Params { option (gogoproto.goproto_stringer) = false; }

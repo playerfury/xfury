@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/fanfury-sports/fury/testutil/network"
-	"github.com/fanfury-sports/fury/testutil/nullify"
-	"github.com/fanfury-sports/fury/x/sportevent/client/cli"
-	"github.com/fanfury-sports/fury/x/sportevent/types"
+	"github.com/playerfury/xfury/testutil/network"
+	"github.com/playerfury/xfury/testutil/nullify"
+	"github.com/playerfury/xfury/x/sportevent/client/cli"
+	"github.com/playerfury/xfury/x/sportevent/types"
 )
 
 func networkWithSportEventObjects(t *testing.T, n int) (*network.Network, []types.SportEvent) {

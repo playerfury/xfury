@@ -2,8 +2,8 @@ package dvm
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/x/dvm/keeper"
-	"github.com/fanfury-sports/fury/x/dvm/types"
+	"github.com/playerfury/xfury/x/dvm/keeper"
+	"github.com/playerfury/xfury/x/dvm/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis

@@ -34,9 +34,9 @@ import (
 	ibcclientHandlers "github.com/cosmos/ibc-go/v3/modules/core/02-client/client"
 	"github.com/gorilla/mux"
 	"github.com/rakyll/statik/fs"
-	"github.com/fanfury-sports/fury/app/keepers"
-	furyappparams "github.com/fanfury-sports/fury/app/params"
-	"github.com/fanfury-sports/fury/app/upgrades"
+	"github.com/playerfury/xfury/app/keepers"
+	furyappparams "github.com/playerfury/xfury/app/params"
+	"github.com/playerfury/xfury/app/upgrades"
 	"github.com/spf13/cast"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmjson "github.com/tendermint/tendermint/libs/json"
@@ -221,7 +221,7 @@ func NewFuryApp(
 
 // MakeCodecs constructs the *std.Codec and *codec.LegacyAmino instances used by
 // Fury. It is useful for tests and clients who do not want to construct the
-// full fury application
+// full xfury application
 func MakeCodecs() (codec.Codec,
 	*codec.LegacyAmino,
 ) {

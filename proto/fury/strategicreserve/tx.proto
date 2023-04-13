@@ -1,7 +1,0 @@
-syntax = "proto3";
-package furysports.fury.strategicreserve;
-
-option go_package = "github.com/fanfury-sports/fury/x/strategicreserve/types";
-
-// Msg defines the Msg service.
-service Msg {}

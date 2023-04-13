@@ -3,7 +3,7 @@ package types
 import (
 	"encoding/binary"
 
-	"github.com/fanfury-sports/fury/utils"
+	"github.com/playerfury/xfury/utils"
 )
 
 var _ binary.ByteOrder

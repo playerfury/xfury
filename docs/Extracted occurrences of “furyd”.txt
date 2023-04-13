@@ -1,0 +1,52 @@
+	"github.com/playerfury/xfury/cmd/xfury/cmd"
+	"github.com/playerfury/xfury/cmd/xfury/cmd"
+		Use:   "xfury",
+	"github.com/playerfury/xfury/cmd/xfury/cmd"
+    image: fanfury/fanfury:xfury
+    command: /bin/sh -c 'cd /home/nodecluster/node0 && xfury start --home xfury'
+    image: fanfury/fanfury:xfury
+    command: /bin/sh -c 'cd /home/nodecluster/node1 && xfury start --home xfury'
+    image: fanfury/fanfury:xfury
+    command: /bin/sh -c 'cd /home/nodecluster/node2 && xfury start --home xfury'
+    image: fanfury/fanfury:xfury
+# Build image: docker build -t fanfury/fanfury:xfury .
+CMD ["xfury"]
+- Place xfury into /usr/local/sbin
+sudo mv xfury /usr/local/sbin/xfury
+sudo mv xfury /usr/local/sbin/xfury
+nano /etc/systemd/system/xfury.service
+ExecStart=/usr/local/sbin/xfury start
+`xfury keys add [key_name]`
+`xfury keys add [key_name] --recover` to regenerate keys with your [BIP39](https://github.com/bitcoin/bips/tree/master/bip-0039) mnemonic
+xfury init {{NODE_NAME}} --chain-id fanfury-sports-1
+xfury start
+xfury start
+- Initialize: `xfury init [node_name] --chain-id [chain_name]`
+- Add key for genesis account `xfury keys add [genesis_key_name]`
+- Add genesis account `xfury add-genesis-account [genesis_key_name] 10000000000000000000uxfury`
+- Create a validator at genesis `xfury gentx [genesis_key_name] 10000000uxfury --chain-id [chain_name]`
+- Collect genesis transactions `xfury collect-gentxs`
+- Start node `xfury start`
+killall xfury
+xfury version
+		  -X github.com/cosmos/cosmos-sdk/version.AppName=xfury \
+	@goviz -i ./cmd/xfury -d 2 | dot -Tpng -o dependency-graph.png
+	@if ! [ -f build/node0/xfury/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/xfury:Z fanfury/fanfury:xfury testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
+- Place xfury into /usr/local/sbin
+sudo mv xfury /usr/local/sbin/xfury
+sudo mv xfury /usr/local/sbin/xfury
+nano /etc/systemd/system/xfury.service
+ExecStart=/usr/local/sbin/xfury start
+`xfury keys add [key_name]`
+`xfury keys add [key_name] --recover` to regenerate keys with your [BIP39](https://github.com/bitcoin/bips/tree/master/bip-0039) mnemonic
+xfury init {{NODE_NAME}} --chain-id fanfury-sports-1
+xfury start
+xfury start
+- Initialize: `xfury init [node_name] --chain-id [chain_name]`
+- Add key for genesis account `xfury keys add [genesis_key_name]`
+- Add genesis account `xfury add-genesis-account [genesis_key_name] 10000000000000000000uxfury`
+- Create a validator at genesis `xfury gentx [genesis_key_name] 10000000uxfury --chain-id [chain_name]`
+- Collect genesis transactions `xfury collect-gentxs`
+- Start node `xfury start`
+killall xfury
+xfury version

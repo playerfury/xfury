@@ -1,4 +1,4 @@
-module github.com/fanfury-sports/fury
+module github.com/playerfury/xfury
 
 go 1.18
 

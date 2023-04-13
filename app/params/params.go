@@ -3,7 +3,7 @@ package params
 // App Parameters
 const (
 	// HumanCoinUnit is human readable representation of the coin name
-	HumanCoinUnit = "fury"
+	HumanCoinUnit = "xfury"
 	// BaseCoinUnit is the actual name of coin used in transaction
 	BaseCoinUnit = "uxfury"
 	// FURYExponent is the exponential digits of the coin

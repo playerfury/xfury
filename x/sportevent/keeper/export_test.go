@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/x/sportevent/types"
+	"github.com/playerfury/xfury/x/sportevent/types"
 )
 
 // KeeperTest is a wrapper object for the keeper, It is being used

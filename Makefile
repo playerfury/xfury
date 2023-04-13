@@ -16,7 +16,7 @@ PACKAGES_SIMTEST=$(shell go list ./... | grep '/simulation')
 LEDGER_ENABLED ?= true
 SDK_PACK := $(shell go list -m github.com/cosmos/cosmos-sdk | sed  's/ /\@/g')
 TM_VERSION := $(shell go list -m github.com/tendermint/tendermint | sed 's:.* ::') # grab everything after the space in "github.com/tendermint/tendermint v0.34.7"
-HTTPS_GIT := https://github.com/fanfury-sports/fury.git
+HTTPS_GIT := https://github.com/playerfury/xfury.git
 DOCKER := $(shell which docker)
 DOCKER_BUF := $(DOCKER) run --rm -v $(CURDIR)/proto:/workspace --workdir /workspace bufbuild/buf
 BUILDDIR ?= $(CURDIR)/build
@@ -67,8 +67,8 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=fury \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=furyd \
+ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=xfury \
+		  -X github.com/cosmos/cosmos-sdk/version.AppName=xfury \
 		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
 		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
@@ -119,7 +119,7 @@ ifneq ($(GO_MINOR_VERSION),18)
 	exit 1
 endif
 
-all: install lint test
+all: install test
 
 BUILD_TARGETS := build install
 
@@ -134,7 +134,7 @@ $(BUILDDIR)/:
 build-linux: go.sum
 	LEDGER_ENABLED=false GOOS=linux GOARCH=amd64 $(MAKE) build
 
-build-fury-linux: go.sum
+build-xfury-linux: go.sum
 	LEDGER_ENABLED=false GOOS=linux GOARCH=amd64 $(MAKE) build
 
 go-mod-cache: go.sum
@@ -148,7 +148,7 @@ go.sum: go.mod
 draw-deps:
 	@# requires brew install graphviz or apt-get install graphviz
 	go get github.com/RobotsAndPencils/goviz
-	@goviz -i ./cmd/furyd -d 2 | dot -Tpng -o dependency-graph.png
+	@goviz -i ./cmd/xfury -d 2 | dot -Tpng -o dependency-graph.png
 
 clean:
 	rm -rf $(CURDIR)/artifacts/
@@ -333,15 +333,15 @@ SONAR_PROJECT_KEY := $(subst $(subst ,, ),:,$(subst /,--,$(SONAR_PROJECT_KEY)))
 ###############################################################################
 
 
-build-docker-fury:
-	@$(MAKE) -C networks/fury
+build-docker-xfury:
+	@$(MAKE) -C networks/xfury
 
 # Run a 4-node testnet locally
-localnet-start: build-fury-linux localnet-stop
-	@if ! [ -f build/node0/fury/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/fury:Z fanfury/fanfury:furyd testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
+localnet-start: build-xfury-linux localnet-stop
+	@if ! [ -f build/node0/xfury/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/xfury:Z fanfury/fanfury:xfury testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
 	docker-compose up -d
 
 localnet-stop:
 	docker-compose down
 
-.PHONY: build-docker-fury localnet-start localnet-stop
+.PHONY: build-docker-xfury localnet-start localnet-stop

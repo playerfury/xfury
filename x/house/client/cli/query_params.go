@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/fanfury-sports/fury/x/house/types"
+	"github.com/playerfury/xfury/x/house/types"
 	"github.com/spf13/cobra"
 )
 

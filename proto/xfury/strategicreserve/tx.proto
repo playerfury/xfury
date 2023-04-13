@@ -1,0 +1,7 @@
+syntax = "proto3";
+package playerfury.xfury.strategicreserve;
+
+option go_package = "github.com/playerfury/xfury/x/strategicreserve/types";
+
+// Msg defines the Msg service.
+service Msg {}

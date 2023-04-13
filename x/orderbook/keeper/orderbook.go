@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/fanfury-sports/fury/x/orderbook/types"
-	srtypes "github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/x/orderbook/types"
+	srtypes "github.com/playerfury/xfury/x/strategicreserve/types"
 )
 
 // SetBook sets a book.

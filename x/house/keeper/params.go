@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/fanfury-sports/fury/x/house/types"
+	"github.com/playerfury/xfury/x/house/types"
 )
 
 // Get all parameters as types.Params

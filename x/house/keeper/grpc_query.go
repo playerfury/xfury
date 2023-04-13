@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/fanfury-sports/fury/x/house/types"
+	"github.com/playerfury/xfury/x/house/types"
 )
 
 var _ types.QueryServer = Keeper{}

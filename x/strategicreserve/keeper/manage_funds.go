@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/fanfury-sports/fury/app/params"
-	bettypes "github.com/fanfury-sports/fury/x/bet/types"
-	"github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/app/params"
+	bettypes "github.com/playerfury/xfury/x/bet/types"
+	"github.com/playerfury/xfury/x/strategicreserve/types"
 )
 
 // ProcessBetPlacement transfers the bet fee from the bettor's account

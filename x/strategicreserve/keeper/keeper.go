@@ -8,8 +8,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/fanfury-sports/fury/consts"
-	"github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/consts"
+	"github.com/playerfury/xfury/x/strategicreserve/types"
 )
 
 // Keeper is the type for module properties

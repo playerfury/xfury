@@ -2,12 +2,12 @@ package app
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/fanfury-sports/fury/app/params"
+	"github.com/playerfury/xfury/app/params"
 )
 
 const (
 	// AccountAddressPrefix prefix used for generating account address
-	AccountAddressPrefix = "did:fury:"
+	AccountAddressPrefix = "did:xfury:"
 )
 
 var (

@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/fanfury-sports/fury/x/strategicreserve/types"
+	"github.com/playerfury/xfury/x/strategicreserve/types"
 )
 
 // msgServer

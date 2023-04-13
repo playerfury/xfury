@@ -4,7 +4,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/spf13/cobra"
 
-	"github.com/fanfury-sports/fury/x/house/types"
+	"github.com/playerfury/xfury/x/house/types"
 )
 
 // NewTxCmd returns a root CLI command handler for all x/house transaction commands.
